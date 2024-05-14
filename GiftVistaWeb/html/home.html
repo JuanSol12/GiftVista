@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GiftVista</title>
+  <!-- Agrega etiqueta meta para compatibilidad con IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../js/homejs.js">
+  <link rel="stylesheet" href="../css/sidebar.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+  <div class="sidebar">
+    <h2>Filtros</h2>
+    <button>Borrar filtros</button>
+    <p>Categoría</p>
+    <table id="categoriesTable"> 
+      <tr>
+        <td><input type="checkbox" class="category" value="Informática">Informática</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="category" value="Limpieza">Limpieza</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="category" value="Limpieza">Papelería</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="category" value="Limpieza">Campo</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="category" value="Limpieza">Explorar</td>
+        <td>78</td>
+      </tr>
+    </table>
+    <p>Precios</p>
+    <table id="pricesTable"> 
+      <tr>
+        <td><input type="checkbox" class="price" value="0-10">0-10€</td>
+        <td>19</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="price" value="10-50">10-50€</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="price" value="51-250">51-250€</td>
+        <td>32</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" class="price" value="251-500">251 - 500€</td>
+        <td>15</td>
+      </tr>
+    </table>
+    
+    <div id="busca" style="display: flex; align-items: center; border-radius: 25px; padding: 5px; margin-top: 20px;">
+      <input type="text" id="busca" placeholder="Precio(Ej:40-100)" style="border: none; background-color: white; font-size: 0.8em; padding: 5px; color:white; width: 80%;">
+      <i class="fas fa-search" style="font-size: 1em; color: #555;"></i>
+    </div>
+    <button id="applyFilters">Aplicar filtros (0)</button> <!-- Actualizado el texto del botón -->
+
+  </div>
+  <!-- Cabecera -->
+
+  <header style="background-color: #222; display: flex; justify-content: space-between; align-items: center; padding: 1em;">
+    <div style="display: flex; align-items: center;">
+      <i class="fas fa-puzzle-piece"  style="font-size: 24px; color: white; margin-right: 10px;"></i>
+      <h1 style="margin: 0; color: white; font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 1.5em;">IA</h1>
+    </div>
+    <div id="busca" style="display: flex; align-items: center; border-radius: 25px; padding: 5px;">
+      <input type="text" id="busca" placeholder="Buscar productos" style="border: none; background-color: white; font-size: 1em; padding: 5px; color:white;">
+      <i class="fas fa-search" style="font-size: 1.25em; color: #555;"></i>
+    </div>
+    <nav>
+      <ul style="display: flex; align-items: center;">
+          <li><a href="../html/home.html" style="color: white;"><span style="color: red; margin: 0 5px; font-size: 1.25em;"></span>Inicio</a></li>
+          <li><span style="color: red; margin: 0 5px; font-size: 1.25em;"></span>Productos</li>
+          <li><span style="color: red; margin: 0 5px; font-size: 1.25em;"></span>IA</li>
+          <li><span style="color: red; margin: 0 5px; font-size: 1.25em;"></span>Amigos</li>
+          <li><span style="color: red; margin: 0 5px; font-size: 1.25em;"></span>Chat</li>
+          <li><span style="color: red; margin: 0 5px; font-size: 1.25em;"></span>Info</li>
+          <li><a href="../html/login.html" style="color: white;"><i class="fas fa-user" style="color: red;"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+    <!-- Contenido principal -->
+  <div class="content">
+    <table>
+      <tr>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 1">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 2">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 3">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 4">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 5">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 6">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 7">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 8">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 5">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 6">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 7">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+        <td>
+          <img src="..\media\pala.jpg" alt="Producto 8">
+          <div class="product-info">
+            <p>Pala mango de fibra C-25</p>
+            <p>€25.00</p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Script -->
+
+  <script>
+    // Función para contar las categorías seleccionadas
+    function countSelectedCategories() {
+      const selectedCategories = document.querySelectorAll('.selected');
+      return selectedCategories.length;
+    }
+
+    // Función para actualizar el texto del botón "Aplicar filtros"
+    function updateApplyFiltersButton() {
+      const selectedCategories = countSelectedCategories();
+      const applyFiltersButton = document.getElementById('applyFilters');
+      applyFiltersButton.textContent = `Aplicar filtros (${selectedCategories})`;
+    }
+
+    // Función para manejar el clic en una categoría
+    function toggleCategory() {
+      this.classList.toggle('selected'); // Cambia el estilo de la categoría
+      updateApplyFiltersButton(); // Actualiza el texto del botón
+    }
+
+    // Agrega el evento de clic a todas las categorías
+    const categories = document.querySelectorAll('.category');
+    categories.forEach(category => {
+      category.addEventListener('click', toggleCategory);
+    });
+  </script>
+</body>
+</html>

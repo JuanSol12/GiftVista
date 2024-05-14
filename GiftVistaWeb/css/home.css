@@ -1,0 +1,143 @@
+/* home.css */
+header {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 2em; 
+  width: 100%;
+  margin: 0;
+  font-size: 1.2em; 
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2em; 
+  padding: 10px; 
+  background-color: white;
+  color: black;
+}
+
+  header input[type="text"] {
+  border: none;
+  background-color: transparent;
+  font-size: 1em;
+  padding: 5px;
+  color: #222;
+  }
+  header .fa-search {
+  margin-left: 5px;
+  }
+  header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  }
+  header nav li {
+  margin: 0 10px;
+  }
+  header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25em;
+  }
+  header nav a:hover {
+  color: #ddd;
+  }
+  header nav a i {
+  margin-right: 5px;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    }
+header div h1 {
+  background-color: #222222;
+}
+#busca{
+  background-color: white;
+}    
+
+/* sidebar.css */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  margin-top: 100px; /* Ajusta el valor según el tamaño de tu header */
+  font-family: 'Roboto', sans-serif; /* Tipo de letra */
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-weight: bold;
+  color: black; /* Color del texto */
+  font-size: 1.5em; /* Tamaño de la fuente */
+}
+
+.sidebar button {
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  color: white; /* Color del texto */
+  background-color: #222; /* Color de fondo */
+  border: 1px solid #ccc; /* Borde gris claro */
+  padding: 10px 0; /* Aumenta el tamaño vertical del botón */
+  width: 80%; /* Anchura del botón */
+  font-family: 'Roboto', sans-serif; /* Tipo de letra */
+  font-weight: 700; /* Peso de la fuente */
+  font-size: 1.5em; /* Tamaño de la fuente */
+}
+
+.sidebar button:hover {
+  background-color: red; /* Color de fondo al pasar el ratón */
+}
+
+.sidebar p {
+  text-align: center;
+  color: black; /* Color del texto */
+}
+
+.sidebar table {
+  width: 100%;
+}
+
+.sidebar table td {
+  padding: 8px;
+  text-align: center;
+  color: black; /* Color del texto */
+}
+
+.content {
+  margin-left: 260px; /* Para dejar espacio para la barra lateral */
+}
+
+.content table {
+  width: calc(100% ); /* El ancho de la tabla es el 100% del ancho de la ventana menos el ancho de la barra lateral */
+  margin: 20px;
+  border-collapse: collapse;
+}
+
+.content table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.content table img {
+  max-width: 140px; /* Establece un ancho máximo para las imágenes */
+  max-height: 190px; /* Establece una altura máxima para las imágenes */
+}
+html body header {
+  margin-left: -4px
+  
+}
